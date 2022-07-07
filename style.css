@@ -86,6 +86,7 @@ img{
    border-radius: 10px;
    cursor: pointer;
    animation: moveBanner 6s ease;
+    text-transform: uppercase;
 }
 .h-info button:hover{
     background: white;
