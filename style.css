@@ -32,6 +32,9 @@ img{
 .super-info p, a{
     margin: 0px 15px 15px 15px;
 }
+.super-info a:hover{
+    color: #a4a4a4;
+}
 .h-bg{
    height: 93vh;
    width: 100%;
