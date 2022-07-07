@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: "Roboto", sans-serif;
+}
+ul, li, a, p{
+    text-decoration: none;
+    list-style: none;
+    color: #fff
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.info-bg{
+    background: #100b03;
+}
+.info{
+    display: 
+}
+.super-info{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.super-info p, a{
+    margin: 0px 15px 15px 15px;
+}
+.h-bg{
+   height: 93vh;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+.h-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 8);
+}
+.h-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    animation: zoom 5s ease;
+
+}
+.h-info{
+    max-width: 960px;
+    padding-left: 10px;
+    margin: 0 auto;
+    /* background: blue; */
+    top: -60%;
+    position: relative;
+}
+.h-info h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-style: italic;
+    text-shadow: 10px 10px 10px rgba(16, 11, 3, 1);
+    margin-bottom: 0.3rem;
+    animation: moveBanner 2s ease;
+}
+.h-info p{
+    font-style: italic;
+    text-shadow: 10px 10px 10px rgba(16, 11, 3, 1);
+    font-size: 1.25em;
+    margin-bottom: 0.9rem;
+    animation: moveBanner 4s ease;
+}
+.h-info button{
+   padding: 10px 20px;
+   border: none;
+   background-color: #100b03;
+   color: #fff;
+   border-radius: 10px;
+   cursor: pointer;
+   animation: moveBanner 6s ease;
+}
+.h-info button:hover{
+    background: white;
+    color: #100b03;
+    transition: 1s;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes moveBanner{
+    0%{
+        transform: translateY(14rem) rotateY(-50deg);
+    }
+    100%{
+        transform: translate(0) rotateY(0);
+        opacity: 1;
+    }
+}
